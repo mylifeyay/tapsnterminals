@@ -1,0 +1,61 @@
+{
+  "promos": [
+    {
+      "from": "Metro Brewers Co-op <deals@metrobrewers.example>",
+      "subject": "NEWS FLASH: {pct}% off local lagers — today only",
+      "body": "Overstock at the warehouse means your gain. Every case of local lager ordered before close of business today ships at {pct}% off. Stock up before the weekend rush.",
+      "target": { "category": "LAGER", "tag": "{local}" }
+    },
+    {
+      "from": "Emerald Isle Imports <trade@emeraldisle.example>",
+      "subject": "Stout season: {pct}% off Gwinness Draught",
+      "body": "Cold front incoming. Dark beers move fast when the weather turns. {pct}% off Gwinness Draught Stout for orders placed today.",
+      "target": { "beverageId": "gwinness-stout" }
+    },
+    {
+      "from": "Craft Collective <hello@craftcollective.example>",
+      "subject": "Craft & premium ales — {pct}% trade discount",
+      "body": "Our brewers are clearing tanks. All premium-tagged ales are {pct}% off today. Your connoisseurs will thank you.",
+      "target": { "category": "ALE" }
+    },
+    {
+      "from": "Orchard Fresh <sales@orchardfresh.example>",
+      "subject": "Cider surplus! {pct}% off Summersby",
+      "body": "Bumper harvest, overflowing cellar. Summersby Apple Cider is {pct}% off on all orders placed today.",
+      "target": { "beverageId": "summersby-cider" }
+    },
+    {
+      "from": "Spirit Route Distribution <orders@spiritroute.example>",
+      "subject": "Back-bar refresh: {pct}% off spirits & cocktail kits",
+      "body": "Refresh your back bar. All spirit and cocktail stock ships at {pct}% off for today's orders. Premium serves, premium margins.",
+      "target": { "category": "COCKTAIL" }
+    }
+  ],
+  "flavor": [
+    {
+      "from": "Landlord — K. Lim <kelvin.lim@shophouse.example>",
+      "subject": "Re: aircon servicing",
+      "body": "Technician will come by Thursday morning. Please make sure someone is there to let him in. Also — rent is due on the 1st as usual. Cheers."
+    },
+    {
+      "from": "Neighbourhood Assoc. <committee@streetassoc.example>",
+      "subject": "Street festival this weekend",
+      "body": "Reminder that the street will be closed to traffic Saturday evening. Expect heavier foot traffic and noise complaints from Mrs. Wong at No. 14 (as usual)."
+    },
+    {
+      "from": "TapsPOS Support <noreply@tapspos.example>",
+      "subject": "Your nightly backup completed",
+      "body": "> backup.sh --target=cloud\n> 1,204 records synced\n> status: OK\n\nNo action required."
+    },
+    {
+      "from": "A Regular <frank.the.regular@mail.example>",
+      "subject": "the usual",
+      "body": "Will be in at 8. Save my stool. The one that doesn't wobble. You know the one."
+    },
+    {
+      "from": "Health & Licensing Board <licensing@gov.example>",
+      "subject": "Reminder: responsible service of alcohol",
+      "body": "Licensees are reminded that serving visibly intoxicated patrons is an offence. Your inspection is not scheduled. That is the point of inspections."
+    }
+  ]
+}

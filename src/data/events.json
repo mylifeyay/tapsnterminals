@@ -1,0 +1,259 @@
+[
+  {
+    "id": "the-proposal",
+    "title": "The Proposal",
+    "speakerArchetype": "OFFICE_WORKER",
+    "dialogue": "Psst — I've got a ring in my pocket and I'm sweating through my shirt. Can you help make this moment special?",
+    "timeoutSeconds": 12,
+    "weight": 2,
+    "minHour": 20,
+    "interventions": [
+      {
+        "id": "comp-bubbly",
+        "label": "Comp a bottle of bubbly",
+        "description": "−$40. The whole bar cheers.",
+        "effects": { "cash": -40, "prestige": 6 },
+        "successText": "They said yes! The room erupts and three tables order celebratory rounds."
+      },
+      {
+        "id": "cue-music",
+        "label": "Dim the lights, cue the song",
+        "description": "Charm check. Free, but timing is everything.",
+        "check": { "stat": "charm", "difficulty": 6 },
+        "effects": { "prestige": 4 },
+        "successText": "Perfect timing. Someone films it — your bar is trending tonight.",
+        "failEffects": { "prestige": -1 },
+        "failText": "The song cuts in mid-sentence. Awkward laughter, but still a yes."
+      }
+    ],
+    "ignoreText": "They pop the question on their own. Polite applause; life goes on."
+  },
+  {
+    "id": "rowdy-table",
+    "title": "Rowdy Table",
+    "speakerArchetype": "ROWDY",
+    "dialogue": "OI! ANOTHER ROUND! And turn the music UP, this is a PARTY!",
+    "timeoutSeconds": 12,
+    "weight": 3,
+    "minHour": 21,
+    "interventions": [
+      {
+        "id": "send-bouncer",
+        "label": "Send the bouncer over",
+        "description": "Requires a Bouncer on staff.",
+        "requiresRole": "BOUNCER",
+        "effects": { "prestige": 3 },
+        "successText": "A quiet word and a firm nod. The table settles; the room relaxes."
+      },
+      {
+        "id": "water-snacks",
+        "label": "Water & fries on the house",
+        "description": "−$12. Charm check to calm them down.",
+        "check": { "stat": "charm", "difficulty": 5 },
+        "effects": { "cash": -12, "prestige": 2 },
+        "successText": "Carbs and hydration work their magic. They tip on the way out.",
+        "failEffects": { "cash": -12, "prestige": -2 },
+        "failText": "They throw a fry at the dartboard. Two couples leave early."
+      }
+    ],
+    "ignoreText": "They get louder for a while, then fizzle out on their own."
+  },
+  {
+    "id": "incognito-critic",
+    "title": "Incognito Critic",
+    "speakerArchetype": "CONNOISSEUR",
+    "dialogue": "Tell me — is your stout nitrogenated in-line, or are you just pouring from a widget can like a heathen?",
+    "timeoutSeconds": 12,
+    "weight": 2,
+    "interventions": [
+      {
+        "id": "tasting-flight",
+        "label": "Pour a tasting flight",
+        "description": "−$15. Mixology check.",
+        "check": { "stat": "mixology", "difficulty": 6 },
+        "effects": { "cash": -15, "prestige": 8 },
+        "successText": "They scribble furiously. Next week's column: \"a hidden gem with a serious pour.\"",
+        "failEffects": { "cash": -15, "prestige": -3 },
+        "failText": "The head collapses in seconds. They sigh audibly and leave a one-star review."
+      },
+      {
+        "id": "talk-shop",
+        "label": "Talk shop with them",
+        "description": "Charm check. Free.",
+        "check": { "stat": "charm", "difficulty": 5 },
+        "effects": { "prestige": 4 },
+        "successText": "You bond over gas blends. They leave a business card and a generous tip.",
+        "failEffects": { "prestige": -1 },
+        "failText": "You mispronounce 'Saison'. They nod politely and finish their drink."
+      }
+    ],
+    "ignoreText": "They finish their drink in silence and leave no review. Neutral."
+  },
+  {
+    "id": "lost-tourist",
+    "title": "Lost Tourist",
+    "speakerArchetype": "TOURIST",
+    "dialogue": "Hi! My phone died and I have no idea where my hotel is. Also — what's the local thing to drink here?",
+    "timeoutSeconds": 12,
+    "weight": 3,
+    "interventions": [
+      {
+        "id": "napkin-map",
+        "label": "Draw a map on a napkin",
+        "description": "Free. A little kindness.",
+        "effects": { "prestige": 2 },
+        "successText": "They photograph the napkin for their travel blog. Five stars."
+      },
+      {
+        "id": "local-pour",
+        "label": "Pour them the local lager",
+        "description": "+$9 sale, charm check for a tip.",
+        "check": { "stat": "charm", "difficulty": 4 },
+        "effects": { "cash": 15, "prestige": 1 },
+        "successText": "They love it, buy a second, and tip generously.",
+        "failEffects": { "cash": 9 },
+        "failText": "They drink it, shrug, and head off into the night."
+      }
+    ],
+    "ignoreText": "Another patron helps them out. They wave on the way out."
+  },
+  {
+    "id": "birthday-round",
+    "title": "Birthday Round",
+    "speakerArchetype": "STUDENT",
+    "dialogue": "It's my 21st and my friends bailed. Is it lame to ask for a birthday shout-out?",
+    "timeoutSeconds": 12,
+    "weight": 2,
+    "interventions": [
+      {
+        "id": "round-on-house",
+        "label": "Round on the house",
+        "description": "−$25. Everyone sings.",
+        "effects": { "cash": -25, "prestige": 5, "morale": 3 },
+        "successText": "The whole bar sings. They're crying happy tears into a cider."
+      },
+      {
+        "id": "staff-sing",
+        "label": "Get the staff to sing",
+        "description": "Free. Boosts staff morale.",
+        "effects": { "prestige": 2, "morale": 5 },
+        "successText": "Off-key but heartfelt. The staff are grinning for the rest of the shift."
+      }
+    ],
+    "ignoreText": "They quietly finish their drink. Someone at the bar buys them a shot."
+  },
+  {
+    "id": "tab-dodger",
+    "title": "Tab Dodger",
+    "speakerArchetype": "ROWDY",
+    "dialogue": "…*edges towards the door with a $38 tab still open*",
+    "timeoutSeconds": 12,
+    "weight": 2,
+    "minHour": 22,
+    "interventions": [
+      {
+        "id": "block-door",
+        "label": "Bouncer blocks the door",
+        "description": "Requires a Bouncer on staff.",
+        "requiresRole": "BOUNCER",
+        "effects": { "cash": 38, "prestige": 1 },
+        "successText": "\"Forgetting something, mate?\" They pay up, plus tip, very red-faced."
+      },
+      {
+        "id": "call-out",
+        "label": "Call out politely",
+        "description": "Charm check.",
+        "check": { "stat": "charm", "difficulty": 6 },
+        "effects": { "cash": 38 },
+        "successText": "\"Oh! Totally forgot!\" They settle the tab.",
+        "failEffects": { "cash": -38, "prestige": -1 },
+        "failText": "They bolt. The tab is a write-off."
+      }
+    ],
+    "ignoreText": "They slip out. You eat the $38 tab, but the floor never noticed.",
+    "ignoreEffects": { "cash": -38 }
+  },
+  {
+    "id": "spilled-pint",
+    "title": "Spilled Pint",
+    "speakerArchetype": "REGULAR",
+    "dialogue": "Aw, no — someone knocked my full pint all over the counter. Just poured too.",
+    "timeoutSeconds": 12,
+    "weight": 3,
+    "interventions": [
+      {
+        "id": "replace-pint",
+        "label": "Replace it on the house",
+        "description": "−$4 in stock cost. Loyalty matters.",
+        "effects": { "cash": -4, "prestige": 3 },
+        "successText": "\"This is why I come here.\" They tell their mates."
+      },
+      {
+        "id": "towel-joke",
+        "label": "Towel and a joke",
+        "description": "Charm check.",
+        "check": { "stat": "charm", "difficulty": 5 },
+        "effects": { "prestige": 1 },
+        "successText": "They laugh it off and order another at full price.",
+        "failEffects": { "prestige": -2 },
+        "failText": "The joke lands like the pint did. They grumble."
+      }
+    ],
+    "ignoreText": "They mop it up with napkins and order another."
+  },
+  {
+    "id": "supplier-rep",
+    "title": "Supplier Rep Drops By",
+    "speakerArchetype": "OFFICE_WORKER",
+    "dialogue": "Hey boss! Brought samples of our new hazy IPA. Fancy a chat about volume pricing?",
+    "timeoutSeconds": 12,
+    "weight": 1,
+    "interventions": [
+      {
+        "id": "negotiate",
+        "label": "Negotiate a rebate",
+        "description": "Charm check. Cash on success.",
+        "check": { "stat": "charm", "difficulty": 6 },
+        "effects": { "cash": 60 },
+        "successText": "You talk them into a $60 marketing rebate. Nice.",
+        "failText": "They promise to 'circle back'. They will not circle back."
+      },
+      {
+        "id": "staff-tasting",
+        "label": "Staff tasting session",
+        "description": "Boosts morale.",
+        "effects": { "morale": 6 },
+        "successText": "The team loves it. Spirits are high (and slightly hazy)."
+      }
+    ],
+    "ignoreText": "They leave a brochure on the counter and go."
+  },
+  {
+    "id": "heartbreak",
+    "title": "Heartbreak at the Bar",
+    "speakerArchetype": "REGULAR",
+    "dialogue": "She took the dog. She took the good frying pan. She took… everything. Pour me something strong.",
+    "timeoutSeconds": 12,
+    "weight": 2,
+    "minHour": 22,
+    "interventions": [
+      {
+        "id": "lend-ear",
+        "label": "Lend an ear, pour a lime soda",
+        "description": "Charm check. Responsible service.",
+        "check": { "stat": "charm", "difficulty": 4 },
+        "effects": { "prestige": 4 },
+        "successText": "An hour of venting later, they leave lighter. A regular for life.",
+        "failText": "They appreciate it, but head somewhere that will pour doubles."
+      },
+      {
+        "id": "call-cab",
+        "label": "Call them a cab",
+        "description": "−$10. Safe home.",
+        "effects": { "cash": -10, "prestige": 2 },
+        "successText": "They text the bar's socials the next day: 'thank you for looking after me.'"
+      }
+    ],
+    "ignoreText": "They nurse a whiskey and leave after midnight. Neutral."
+  }
+]

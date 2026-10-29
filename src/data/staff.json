@@ -1,0 +1,78 @@
+{
+  "roster": [
+    {
+      "id": "staff-mei",
+      "name": "Mei Tan",
+      "role": "BARTENDER",
+      "salaryDaily": 95,
+      "stats": { "speed": 6, "mixology": 5, "charm": 7 },
+      "morale": 72,
+      "bio": "Ex-hawker-centre drinks auntie. Remembers every regular's order."
+    },
+    {
+      "id": "staff-ollie",
+      "name": "Ollie Brennan",
+      "role": "BARTENDER",
+      "salaryDaily": 80,
+      "stats": { "speed": 5, "mixology": 4, "charm": 5 },
+      "morale": 65,
+      "bio": "Gap-year backpacker who stayed for the sunsets. Learning fast."
+    }
+  ],
+  "applicants": [
+    {
+      "id": "staff-rafael",
+      "name": "Rafael Ortiz",
+      "role": "BARTENDER",
+      "salaryDaily": 140,
+      "stats": { "speed": 7, "mixology": 9, "charm": 6 },
+      "morale": 70,
+      "bio": "Competition mixologist. Will not shut up about clarified milk punch."
+    },
+    {
+      "id": "staff-priya",
+      "name": "Priya Nair",
+      "role": "SERVER",
+      "salaryDaily": 75,
+      "stats": { "speed": 8, "mixology": 3, "charm": 8 },
+      "morale": 75,
+      "bio": "Carries six pints without a tray. Patrons adore her."
+    },
+    {
+      "id": "staff-dmitri",
+      "name": "Dmitri Volkov",
+      "role": "BOUNCER",
+      "salaryDaily": 90,
+      "stats": { "speed": 5, "mixology": 1, "charm": 4 },
+      "morale": 60,
+      "bio": "Former rugby prop. Gentle giant, firm handshake."
+    },
+    {
+      "id": "staff-hana",
+      "name": "Hana Suzuki",
+      "role": "BARTENDER",
+      "salaryDaily": 110,
+      "stats": { "speed": 9, "mixology": 6, "charm": 5 },
+      "morale": 68,
+      "bio": "Pours a perfect pint in under six seconds. Quietly competitive."
+    },
+    {
+      "id": "staff-jules",
+      "name": "Jules Moreau",
+      "role": "SERVER",
+      "salaryDaily": 65,
+      "stats": { "speed": 6, "mixology": 2, "charm": 6 },
+      "morale": 70,
+      "bio": "Philosophy student. Will discuss Camus between table runs."
+    },
+    {
+      "id": "staff-big-tony",
+      "name": "Tony Ramos",
+      "role": "BOUNCER",
+      "salaryDaily": 70,
+      "stats": { "speed": 4, "mixology": 2, "charm": 6 },
+      "morale": 66,
+      "bio": "Knows everyone on the street. Defuses fights with dad jokes."
+    }
+  ]
+}
